@@ -1,0 +1,262 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.prices-main {
+    width: 80%;
+    margin:120px auto 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 60px;
+}
+
+.price-section {
+    text-align: center;
+    h1 {
+        margin-bottom: 30px;
+    }
+    p {
+        text-align: left;
+        &:nth-child(1) {
+            width: 80%;
+        }
+    }
+    ul {
+        list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        button {
+            overflow: hidden;
+            position: relative;
+            outline: none;
+            border: none;
+            &:hover {
+                cursor: pointer;
+            }
+            li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                padding: 20px 30px;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+.prices-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    a {
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+        -webkit-box-shadow: 0px 0px 15px 3px #0000002E;
+                box-shadow: 0px 0px 15px 3px #0000002E;
+        color: black;
+        text-decoration: none;
+        padding: 5px 0;
+        width: 60px;
+        font-size: 25px;
+        text-align: center;
+        background-color: white;
+        border-radius: 3px;
+        &:hover {
+            background-color: #A4A4A4;
+            color: white;
+            -webkit-box-shadow: 0px 0px 12px 3px #0000004D;
+                    box-shadow: 0px 0px 12px 3px #0000004D;
+        }
+    }
+}
+
+.announcement {
+    text-align: center;
+    width: 353px;
+    padding: 30px 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    overflow: hidden;
+    background: -o-linear-gradient(344.62deg, #C56504 8.44%, #FFC790 99.13%);
+    background: linear-gradient(105.38deg, #C56504 8.44%, #FFC790 99.13%);
+    border-radius: 10px;
+    color: white;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 4;
+    h1 {
+        position: relative;
+        z-index: 2;
+        font-size: 24px;
+        width: 90%;
+        margin: auto;
+    }
+    .announcement-buttons {
+        position: relative;
+        z-index: 2;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 40px;
+        margin-top: 30px;
+        a, button {
+            color: white;
+            text-decoration: none;
+            outline: none;
+            width: 80px;
+            -webkit-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+            padding: 10px 0;
+            background: -o-linear-gradient(358.31deg, #B25C03 1%, #B99168 97%),-o-linear-gradient(bottom, #FFFFFF, #FFFFFF);
+            background: linear-gradient(91.69deg, #B25C03 1%, #B99168 97%),linear-gradient(0deg, #FFFFFF, #FFFFFF);
+            border: 2px solid white;
+            border-radius: 10px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 120%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media(max-width:650px) {
+    .price-section {
+        h1 {
+            font-size: 16px;
+        }
+        ul {
+            button {
+                li {
+                    padding: 20px 10px;
+                    p {
+                        &:nth-child(1) {
+                            width: 80%;
+                        }
+                        font-size: 14px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    .prices-main-h1 {
+        font-size: 20px;
+        width: 90%;
+        margin: auto;
+    }
+    .prices-main {
+        margin-top: 80px;
+        width: 100%;
+    }
+    .prices-links {
+        a {
+            padding: 5px 0;
+            width: 40px;
+            font-size: 20px;
+            &:hover {
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+                -webkit-box-shadow: 0px 0px 15px 3px #0000002E;
+                        box-shadow: 0px 0px 15px 3px #0000002E;
+            }
+            &:active {
+                -webkit-tap-highlight-color: transparent;
+                background-color: #A4A4A4;
+                color: white;
+                -webkit-box-shadow: 0px 0px 12px 3px #0000004D;
+                        box-shadow: 0px 0px 12px 3px #0000004D;
+            }
+        }
+    }
+}
+
+@media(max-height:500px) {
+    .price-section {
+        h1 {
+            font-size: 16px;
+        }
+        ul {
+            button {
+                li {
+                    padding: 20px 10px;
+                    p {
+                        &:nth-child(1) {
+                            width: 80%;
+                        }
+                        font-size: 14px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    .prices-main-h1 {
+        font-size: 20px;
+        width: 90%;
+        margin: auto;
+    }
+    .prices-main {
+        margin-top: 80px;
+        width: 100%;
+    }
+    .prices-links {
+        a {
+            padding: 5px 0;
+            width: 40px;
+            font-size: 20px;
+            &:hover {
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+                -webkit-box-shadow: 0px 0px 15px 3px #0000002E;
+                        box-shadow: 0px 0px 15px 3px #0000002E;
+            }
+            &:active {
+                -webkit-tap-highlight-color: transparent;
+                background-color: #A4A4A4;
+                color: white;
+                -webkit-box-shadow: 0px 0px 12px 3px #0000004D;
+                        box-shadow: 0px 0px 12px 3px #0000004D;
+            }
+        }
+    }
+}
