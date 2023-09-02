@@ -9,7 +9,7 @@ import { useWindowSize } from 'react-use';
 export function Navigation() {
     const windowSize = useWindowSize();
     const isWideScreen = windowSize.width > 650
-    const link = isWideScreen ? 'https://wa.me/+77052727775' : 'tel:+77052727775;';
+    const link = isWideScreen ? 'https://wa.me/+77052727775' : 'tel:+77052727775';
     const [icon, setIcon] = useState(faBars);
     const [listHeight, setListHeight] = useState(0);
 
