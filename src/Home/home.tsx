@@ -1,5 +1,5 @@
 import './home.scss'
-import mainLogo from '../img/Frame 78 1.svg'
+import mainLogo from '../img/Frame 78 1.png'
 import backPain from '../img/Frame 66.svg'
 import doctor from '../img/Frame 67.svg'
 import one from '../img/iconOne1.png'

@@ -160,6 +160,7 @@ header {
                 &:is(#tel) {
                     margin-left: 20px;
                     display: block;
+                    font-size: 14px;
                     &:hover {
                         &::before {
                             -webkit-transform: scaleX(0);
